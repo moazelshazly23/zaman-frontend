@@ -1,0 +1,61 @@
+/* ==============================================================
+   ZAMAN — Animations
+   Subtle, premium motion. Scroll-reveal + hover micro-interactions.
+   ============================================================== */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s var(--ease), transform 0.8s var(--ease);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-stagger.is-visible .stagger-item {
+  animation: rise 0.7s var(--ease) forwards;
+}
+.reveal-stagger .stagger-item {
+  opacity: 0;
+}
+.reveal-stagger.is-visible .stagger-item:nth-child(1) { animation-delay: 0.05s; }
+.reveal-stagger.is-visible .stagger-item:nth-child(2) { animation-delay: 0.15s; }
+.reveal-stagger.is-visible .stagger-item:nth-child(3) { animation-delay: 0.25s; }
+.reveal-stagger.is-visible .stagger-item:nth-child(4) { animation-delay: 0.35s; }
+.reveal-stagger.is-visible .stagger-item:nth-child(5) { animation-delay: 0.45s; }
+.reveal-stagger.is-visible .stagger-item:nth-child(6) { animation-delay: 0.55s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal-stagger .stagger-item {
+    opacity: 1;
+    transform: none;
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+.fade-in {
+  animation: fade-in 0.5s var(--ease) forwards;
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.spin {
+  animation: spin 0.9s linear infinite;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.pulse-badge {
+  animation: pulse-badge 0.4s var(--ease);
+}
+@keyframes pulse-badge {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.35); }
+  100% { transform: scale(1); }
+}

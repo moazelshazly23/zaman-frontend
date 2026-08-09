@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZAMAN — Timeless Watches, Redefined</title>
+<meta name="description" content="Discover ZAMAN, a modern watch brand crafted around precision, elegance, and timeless design.">
+<meta name="keywords" content="ZAMAN, luxury watches, premium watches Egypt, watch brand, chronograph, mens watches">
+<meta property="og:title" content="ZAMAN — Timeless Watches, Redefined">
+<meta property="og:description" content="A modern premium watch brand inspired by the value of time, elegance, precision, and timeless style.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.pexels.com/photos/28135838/pexels-photo-28135838.jpeg?auto=compress&cs=tinysrgb&w=1200">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2244%22 fill=%22%230B0B0B%22 stroke=%22%23C9A45C%22 stroke-width=%224%22/><line x1=%2250%22 y1=%2250%22 x2=%2250%22 y2=%2225%22 stroke=%22%23C9A45C%22 stroke-width=%225%22 stroke-linecap=%22round%22/><line x1=%2250%22 y1=%2250%22 x2=%2268%22 y2=%2250%22 stroke=%22%23C9A45C%22 stroke-width=%225%22 stroke-linecap=%22round%22/></svg>">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">ZA<span>M</span>AN</a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="index.html" class="active">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="shop.html#collections">Collections</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" data-search-trigger aria-label="Search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" stroke-width="1.5"/><path d="M21 21l-4.3-4.3" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </button>
+      <a class="icon-btn" href="contact.html" aria-label="Account">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" stroke-width="1.5"/><path d="M4 20c1.5-4 5-6 8-6s6.5 2 8 6" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </a>
+      <a class="icon-btn" href="cart.html" aria-label="Shopping bag">
+        <svg viewBox="0 0 24 24"><path d="M6 8h12l-1 12H7L6 8z" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 8V6a3 3 0 0 1 6 0v2" stroke-width="1.5"/></svg>
+        <span class="count-badge" data-cart-count>0</span>
+      </a>
+      <button class="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div id="header-search-panel" class="header-search-panel">
+    <form>
+      <input type="search" placeholder="Search for a ZAMAN watch…" aria-label="Search">
+      <button type="submit">Search</button>
+    </form>
+  </div>
+</header>
+
+<nav class="mobile-nav" aria-label="Mobile">
+  <a href="index.html">Home</a>
+  <a href="shop.html">Shop</a>
+  <a href="shop.html#collections">Collections</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-media">
+    <img src="https://images.pexels.com/photos/28135838/pexels-photo-28135838.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="Close-up of a gold ZAMAN watch with black dial reflecting light" width="1800" height="1200">
+  </div>
+  <div class="container">
+    <div class="hero-content">
+      <span class="eyebrow">The ZAMAN Collection</span>
+      <h1>TIME, REDEFINED.</h1>
+      <p>Precision crafted for those who value every moment.</p>
+      <div class="hero-actions">
+        <a href="shop.html" class="btn btn-primary">Shop Collection</a>
+        <a href="about.html" class="btn btn-outline-light">Discover ZAMAN</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll"><span>Scroll</span><span class="line"></span></div>
+</section>
+
+<!-- ============ FEATURED COLLECTION ============ -->
+<section id="featured">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Featured</span>
+      <h2>THE ZAMAN COLLECTION</h2>
+      <p>Designed to make every second count.</p>
+      <div class="hairline"></div>
+    </div>
+    <div class="product-grid reveal-stagger" id="featured-grid"></div>
+  </div>
+</section>
+
+<!-- ============ COLLECTIONS ============ -->
+<section id="collections" class="band-dark" style="padding:0;">
+  <div class="container" style="padding-top:100px;padding-bottom:0;">
+    <div class="section-head">
+      <span class="eyebrow">Explore</span>
+      <h2>COLLECTIONS</h2>
+      <p>Three expressions of the same idea: time, well kept.</p>
+      <div class="hairline"></div>
+    </div>
+  </div>
+  <div class="collections-grid" style="margin-top:64px;">
+    <a class="collection-card reveal" href="shop.html?category=Classic">
+      <img src="https://images.pexels.com/photos/1467188/pexels-photo-1467188.jpeg?auto=compress&cs=tinysrgb&w=900" alt="ZAMAN Classic collection — silver wristwatch with leather strap">
+      <span class="num">01</span>
+      <h3>CLASSIC</h3>
+      <p>Timeless designs for everyday elegance.</p>
+      <span class="cta">Shop Classic →</span>
+    </a>
+    <a class="collection-card reveal" href="shop.html?category=Noir">
+      <img src="https://images.pexels.com/photos/16739804/pexels-photo-16739804.jpeg?auto=compress&cs=tinysrgb&w=900" alt="ZAMAN Noir collection — black wristwatch with metallic dial">
+      <span class="num">02</span>
+      <h3>NOIR</h3>
+      <p>Bold black watches for a modern aesthetic.</p>
+      <span class="cta">Shop Noir →</span>
+    </a>
+    <a class="collection-card reveal" href="shop.html?category=Signature">
+      <img src="https://images.pexels.com/photos/31642726/pexels-photo-31642726.jpeg?auto=compress&cs=tinysrgb&w=900" alt="ZAMAN Signature collection — luxury watches in an elegant display case">
+      <span class="num">03</span>
+      <h3>SIGNATURE</h3>
+      <p>Premium pieces designed to stand out.</p>
+      <span class="cta">Shop Signature →</span>
+    </a>
+  </div>
+</section>
+
+<!-- ============ WHY ZAMAN ============ -->
+<section id="why-zaman">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Our Standard</span>
+      <h2>WHY ZAMAN</h2>
+      <p>Four principles behind every watch we make.</p>
+      <div class="hairline"></div>
+    </div>
+    <div class="values-grid reveal-stagger">
+      <div class="value-item stagger-item">
+        <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
+        <h3>PRECISION</h3>
+        <p>Engineered with attention to every detail.</p>
+      </div>
+      <div class="value-item stagger-item">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M3 12l4-8h10l4 8-9 9-9-9z"/><path d="M3 12h18M9 4l3 8 3-8"/></svg></div>
+        <h3>CRAFTSMANSHIP</h3>
+        <p>Designed with quality materials and refined finishing.</p>
+      </div>
+      <div class="value-item stagger-item">
+        <div class="icon"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M4 9h16M9 4v16"/></svg></div>
+        <h3>TIMELESS DESIGN</h3>
+        <p>Styles created to remain elegant beyond trends.</p>
+      </div>
+      <div class="value-item stagger-item">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-9.5-9C.5 8 3 4 7 4c2 0 4 1.5 5 3 1-1.5 3-3 5-3 4 0 6.5 4 4.5 8-2.5 4.5-9.5 9-9.5 9z"/></svg></div>
+        <h3>ZAMAN PROMISE</h3>
+        <p>Every ZAMAN watch is designed to become part of your story.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BRAND STORY ============ -->
+<section class="band-dark" style="padding:0;">
+  <div class="editorial">
+    <div class="editorial-media reveal">
+      <img src="https://images.pexels.com/photos/4165197/pexels-photo-4165197.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="A man in a black suit jacket wearing a gold ZAMAN watch" loading="lazy">
+    </div>
+    <div class="editorial-text reveal">
+      <span class="eyebrow">Our Story</span>
+      <h2>MORE THAN A WATCH.</h2>
+      <p>ZAMAN was created around a simple idea: time is the one thing we can never get back.</p>
+      <p>Every ZAMAN watch is designed to celebrate the moments that matter — from everyday victories to unforgettable milestones.</p>
+      <a href="about.html" class="btn btn-outline-light">Our Story</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BEST SELLERS ============ -->
+<section id="bestsellers">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Most Loved</span>
+      <h2>BEST SELLERS</h2>
+      <p>The pieces our clients reach for most.</p>
+      <div class="hairline"></div>
+    </div>
+    <div class="filter-bar">
+      <button class="filter-chip is-active" data-filter-chip="All">All</button>
+      <button class="filter-chip" data-filter-chip="Classic">Classic</button>
+      <button class="filter-chip" data-filter-chip="Noir">Noir</button>
+      <button class="filter-chip" data-filter-chip="Signature">Signature</button>
+      <button class="filter-chip" data-filter-chip="Chronograph">Chronograph</button>
+    </div>
+    <div class="product-grid reveal-stagger" id="bestsellers-grid"></div>
+    <div class="load-more-wrap">
+      <a href="shop.html" class="btn btn-outline-dark">View Full Shop</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">ZA<span>M</span>AN</a>
+        <p>A modern premium watch brand inspired by the value of time, elegance, precision, and timeless style.</p>
+        <div class="social-row">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" stroke-width="1.4"/><circle cx="12" cy="12" r="4" stroke-width="1.4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 9h3V6h-3c-2 0-3.5 1.5-3.5 3.5V11H8v3h2.5v6h3v-6H16l.5-3h-3v-1c0-.5.3-1 1-1z" stroke-width="1"/></svg></a>
+          <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M14 4v10.5a2.5 2.5 0 1 1-2.5-2.5" stroke-width="1.4"/><path d="M14 4c0 2.5 2 4.5 4.5 4.5" stroke-width="1.4"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="shop.html#collections">Collections</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Customer Care</h4>
+        <ul>
+          <li><a href="contact.html">Shipping</a></li>
+          <li><a href="contact.html">Returns</a></li>
+          <li><a href="contact.html">FAQ</a></li>
+          <li><a href="contact.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col newsletter">
+        <h4>JOIN THE ZAMAN CIRCLE</h4>
+        <p>Early access to new releases and private offers — no spam, ever.</p>
+        <form class="newsletter-form">
+          <input type="email" required placeholder="Email address" aria-label="Email address">
+          <button type="submit">Join</button>
+        </form>
+        <p class="newsletter-msg"></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ZAMAN. All rights reserved.</span>
+      <span><a href="contact.html">Privacy Policy</a> · <a href="contact.html">Terms of Service</a></span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<div class="toast" id="zaman-toast">
+  <span class="toast-icon"></span>
+  <span class="toast-msg"></span>
+</div>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
